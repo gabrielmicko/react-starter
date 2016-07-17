@@ -2,7 +2,7 @@
   Set the environment variable
   development or production
 */
-var environment = 'development';
+var environment = 'production';
 
 /**
   Imports
@@ -23,8 +23,8 @@ var plugins = [
 
 if (environment === 'production') {
     var ExtractTextPlugin = require('extract-text-webpack-plugin');
-    var extractCSS = new ExtractTextPlugin('public/style/[name].less');
-    var extractLESS = new ExtractTextPlugin('public/style/[name].less');
+    var extractCSS = new ExtractTextPlugin('build/style/[name].less');
+    var extractLESS = new ExtractTextPlugin('build/style/[name].less');
 
     plugins.push(new ExtractTextPlugin('css/style.css', {
         publicPath: '/css/',
@@ -38,8 +38,7 @@ module.exports = {
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
         'react-hot-loader/patch',
-        './src/index.js',
-        './public/style/main.less',
+        './src/index.js'
     ],
     output: {
         path: path.join(__dirname, '/build'),
@@ -71,13 +70,15 @@ module.exports = {
             include: path.join(__dirname, 'redux-devtools')
         }, {
             test: /\.less$/i,
-            loader: (environment === 'development') ? 'style-loader!css-loader!less-loaded?sourceMap' : ExtractTextPlugin.extract('style-loader', 'css-loader', 'less-loader')
+            loader: (environment === 'development') ? 'style-loader!css-loader!less-loader?sourceMap' : ExtractTextPlugin.extract('style-loader', 'css-loader', 'less-loader'),
+            include: path.join(__dirname, 'build/css')
         }, {
             test: /\.css$/,
-            loader: (environment === 'development') ? 'style-loader!css-loader?sourceMap' : ExtractTextPlugin.extract('style-loader', 'css-loader')
+            loader: (environment === 'development') ? 'style-loader!css-loader?sourceMap' : ExtractTextPlugin.extract('style-loader', 'css-loader'),
+            include: path.join(__dirname, 'build/css')
         }, {
             test: /\.(png|jpg|svg)$/,
-            loader: 'url-loader?limit=8192',
+            loader: 'url-loader?limit=1&name=img/[name].[ext]',
             include: path.join(__dirname, 'build/img')
         }]
     }
