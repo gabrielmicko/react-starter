@@ -43,6 +43,7 @@ export default class TodoItem extends Component {
     } else {
       element = (
         <div className='view'>
+          <img src={require("../../static/img/twitter.png")} />
           <input className='toggle'
                  type='checkbox'
                  checked={todo.marked}

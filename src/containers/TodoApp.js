@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 import * as TodoActions from '../actions/TodoActions';
 
-require("../../build/css/main.less");
+require('../css/layout.less');
 
 class TodoApp extends Component {
   render() {
