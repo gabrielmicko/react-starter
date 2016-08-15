@@ -27,3 +27,8 @@ Running the production server
 ```js
 npm run prod
 ```
+
+Linting
+```js
+npm run eslint
+```
