@@ -1,16 +1,17 @@
-# React starter
+### React starter
+Containing:
 
-***The starter kit is currently in development, please check the issues***
-
-* webpack
-* redux-devtools
-* react-hot-loader
-* css-loader
+* webpack v2
+* redux-devtools v3
+* react-hot-loader v3
+* css-loader, style-loader, less-loader
+* redux, react-redux
 * es6
 * dev server
-* production config & server
+* production config and server
+* react-router v4
 
-#Usage
+### Usage
 
 Running the development environment
 
@@ -28,7 +29,12 @@ Running the production server
 npm run prod
 ```
 
-Linting
+Prettify LESS and JS
 ```js
-npm run eslint
+npm run prettify
+```
+
+Prettify LESS and JS on Windows
+```js
+npm run prettify-win
 ```

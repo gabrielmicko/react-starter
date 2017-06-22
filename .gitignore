@@ -1,2 +1,4 @@
 node_modules
-npm-debug.log
+.idea
+src/API/Config/config.json
+config.json

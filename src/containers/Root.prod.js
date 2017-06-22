@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
-import TodoApp from './TodoApp';
+import { ConnectedRouter } from 'react-router-redux';
+import RouterComponent from '../Router';
 
-export default class Root extends Component {
+class Root extends Component {
   render() {
-    const { store } = this.props;
+    const { store, history } = this.props;
     return (
       <Provider store={store}>
-        <TodoApp />
+        <div>
+          <ConnectedRouter history={history}>
+            <RouterComponent />
+          </ConnectedRouter>
+        </div>
       </Provider>
     );
   }
 }
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired,
+};
+
+export default Root;
