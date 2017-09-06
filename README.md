@@ -11,30 +11,40 @@ Containing:
 * production config and server
 * react-router v4
 
+
 ### Usage
 
-Running the development environment
+Create a config file
+```bash
+cp ./src/Config/config.example.json ./src/Config/config.json
+```
 
+Install the dependencies
 ```js
-npm run dev
+yarn run dev
+```
+
+Running the development environment
+```js
+yarn run dev
 ```
 
 Building the app for production
 ```js
-npm run build
+yarn run build
 ```
 
 Running the production server
 ```js
-npm run prod
+yarn run prod
 ```
 
 Prettify LESS and JS
 ```js
-npm run prettify
+yarn run prettify
 ```
 
 Prettify LESS and JS on Windows
 ```js
-npm run prettify-win
+yarn run prettify-win
 ```
