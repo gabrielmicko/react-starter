@@ -61,7 +61,7 @@
     "redux-devtools-chart-monitor": "^1.6.1",
     "redux-devtools-dispatch": "^2.2.0",
     "redux-logger": "^2.7.4",
-    "redux-slider-monitor": "^1.0.7",
+    "redux-slider-monitor": "^2.0.0-1",
     "showdown": "^1.6.4",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.7",
