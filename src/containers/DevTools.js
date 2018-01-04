@@ -7,8 +7,9 @@ import { createDevTools } from 'redux-devtools';
 import LogMonitor from 'redux-devtools-log-monitor';
 import DockMonitor from 'redux-devtools-dock-monitor';
 import SlideMonitor from 'redux-slider-monitor';
-import ChartMonitor from 'redux-devtools-chart-monitor';
+import ChartMonitor from 'redux-devtools-chart-monitor-modern';
 import Dispatcher from 'redux-devtools-dispatch';
+import MultipleMonitors from 'redux-devtools-multiple-monitors';
 
 // createDevTools takes a monitor and produces a DevTools component
 const DevTools = createDevTools(
@@ -23,8 +24,11 @@ const DevTools = createDevTools(
     defaultIsVisible={true}
     changeMonitorKey="ctrl-e"
   >
-    <LogMonitor theme="tomorrow" />
-    <SlideMonitor keyboardEnabled="false" />
+    <MultipleMonitors>
+      <LogMonitor theme="tomorrow" />
+      <Dispatcher />
+    </MultipleMonitors>
+    <SlideMonitor keyboardEnabled={false} />
     <ChartMonitor invertTheme={true} />
     <Dispatcher />
   </DockMonitor>

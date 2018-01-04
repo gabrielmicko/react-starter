@@ -11,7 +11,8 @@ class MainView extends React.Component {
   render() {
     return (
       <div className="main view">
-        Hello <Route exact={true} path="/" component={Index} /> <i className="fa fa-twitter"/>
+        Hello <Route exact={true} path="/" component={Index} />{' '}
+        <i className="fa fa-twitter" />
       </div>
     );
   }

@@ -97,7 +97,7 @@ var config = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/template/template.prod.html',
+      template: 'src/Template/template.prod.html',
       inject: 'body',
       hash: true,
       cache: true,

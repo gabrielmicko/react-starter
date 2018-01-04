@@ -20,12 +20,11 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  boot: PropTypes.func.isRequired,
+  boot: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = (dispatch, state) => ({
-  boot: () => {
-  },
+  boot: () => {}
 });
 
 export default connect(state => {

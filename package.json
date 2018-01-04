@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "node ./devserver.js",
     "prod": "node ./prodserver.js",
-    "build": "./node_modules/.bin/webpack --config ./webpack.prod.js",
-    "prettify-win": "./node_modules/.bin/prettier.cmd --single-quote --trailing-comma es5 --write \"src/**/!(Lesshat).{less,js}\"",
-    "prettify": "./node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"src/**/!(Lesshat).{less,js}\""
+    "build": "webpack --config ./webpack.prod.js",
+    "prettify": "prettier --config .prettierrc --write \"src/**/!(Lesshat).{less,js}\""
   },
   "author": "",
   "license": "ISC",
@@ -17,10 +16,9 @@
     "history": "^4.6.1",
     "json-loader": "^0.5.4",
     "prop-types": "^15.5.4",
-    "qs": "^6.4.0",
-    "react": "^15.4.1",
+    "react": "^16.2.0",
     "react-document-title": "^2.0.2",
-    "react-dom": "^15.4.1",
+    "react-dom": "^16.2.0",
     "react-redux": "^5.0.2",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
@@ -29,11 +27,10 @@
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.1.1",
+    "redux-devtools-multiple-monitors": "^1.0.1",
     "redux-persist": "^4.8.0",
     "redux-saga": "^0.14.0",
-    "redux-thunk": "^2.1.0",
-    "sequelize": "^3.30.2",
-    "showdown": "^1.6.4"
+    "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -58,11 +55,10 @@
     "path": "^0.12.7",
     "prettier": "^1.4.4",
     "react-hot-loader": "^3.0.0-beta.6",
-    "redux-devtools-chart-monitor": "^1.6.1",
+    "redux-devtools-chart-monitor-modern": "^1.6.2",
     "redux-devtools-dispatch": "^2.2.0",
     "redux-logger": "^2.7.4",
     "redux-slider-monitor": "^2.0.0-1",
-    "showdown": "^1.6.4",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.7",
     "webpack": "^2.6.1",
