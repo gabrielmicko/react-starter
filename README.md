@@ -43,8 +43,3 @@ Prettify LESS and JS
 ```js
 yarn run prettify
 ```
-
-Prettify LESS and JS on Windows
-```js
-yarn run prettify-win
-```
