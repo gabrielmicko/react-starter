@@ -1,7 +1,7 @@
 {
-  "name": "hotelier",
-  "version": "1.0.0",
-  "description": "Hotelier.",
+  "name": "react-starter",
+  "version": "1.2.0",
+  "description": "React starter kit.",
   "main": "index.js",
   "scripts": {
     "dev": "node ./devserver.js",
@@ -9,8 +9,8 @@
     "build": "webpack --config ./webpack.prod.js",
     "prettify": "prettier --config .prettierrc --write \"src/**/!(Lesshat).{less,js}\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gabriel Micko",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.15.0",
     "history": "^4.6.1",
