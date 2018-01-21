@@ -7,7 +7,7 @@ import { createDevTools } from 'redux-devtools';
 import LogMonitor from 'redux-devtools-log-monitor';
 import DockMonitor from 'redux-devtools-dock-monitor';
 import SlideMonitor from 'redux-slider-monitor';
-import ChartMonitor from 'redux-devtools-chart-monitor-modern';
+import ChartMonitor from 'redux-devtools-chart-monitor';
 import Dispatcher from 'redux-devtools-dispatch';
 import MultipleMonitors from 'redux-devtools-multiple-monitors';
 

@@ -55,7 +55,7 @@
     "path": "^0.12.7",
     "prettier": "^1.4.4",
     "react-hot-loader": "^3.0.0-beta.6",
-    "redux-devtools-chart-monitor-modern": "^1.6.2",
+    "redux-devtools-chart-monitor": "^1.7.0",
     "redux-devtools-dispatch": "^2.2.0",
     "redux-logger": "^2.7.4",
     "redux-slider-monitor": "^2.0.0-1",
