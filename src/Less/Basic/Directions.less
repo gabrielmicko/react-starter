@@ -1,0 +1,139 @@
+.float-left() {
+  float: left;
+  html[dir='rtl'] & {
+    float: right;
+  }
+}
+
+.float-right() {
+  float: right;
+  html[dir='rtl'] & {
+    float: left;
+  }
+}
+
+.float-none() {
+  float: none;
+  html[dir='rtl'] & {
+    float: none;
+  }
+}
+
+.text-align-left() {
+  text-align: left;
+  html[dir='rtl'] & {
+    text-align: right;
+  }
+}
+
+.text-align-right() {
+  text-align: right;
+  html[dir='rtl'] & {
+    text-align: left;
+  }
+}
+
+.text-align-center() {
+  text-align: center;
+  html[dir='rtl'] & {
+    text-align: center;
+  }
+}
+
+.margin(@top; @right; @bottom; @left) {
+  margin: @top @right @bottom @left;
+  html[dir='rtl'] & {
+    margin: @top @left @bottom @right;
+  }
+}
+
+.margin-left(@left) {
+  margin-left: @left;
+  html[dir='rtl'] & {
+    margin-left: auto;
+    margin-right: @left;
+  }
+}
+
+.margin-right(@right) {
+  margin-right: @right;
+  html[dir='rtl'] & {
+    margin-left: @right;
+    margin-right: auto;
+  }
+}
+
+.margin-horizontal(@left; @right) {
+  margin-left: @left;
+  margin-right: @right;
+  html[dir='rtl'] & {
+    margin-left: @right;
+    margin-right: @left;
+  }
+}
+
+.padding(@top; @right; @bottom; @left) {
+  padding: @top @right @bottom @left;
+  html[dir='rtl'] & {
+    padding: @top @left @bottom @right;
+  }
+}
+
+.padding-horizontal(@left; @right) {
+  padding-left: @left;
+  padding-right: @right;
+  html[dir='rtl'] & {
+    padding-left: @right;
+    padding-right: @left;
+  }
+}
+
+.border-width(@top; @right; @bottom; @left) {
+  border-width: @top @right @bottom @left;
+  html[dir='rtl'] & {
+    border-width: @top @left @bottom @right;
+  }
+}
+
+.border-color(@top; @right; @bottom; @left) {
+  border-color: @top @right @bottom @left;
+  html[dir='rtl'] & {
+    border-color: @top @left @bottom @right;
+  }
+}
+
+.border-radius(@top; @right; @bottom; @left) {
+  -webkit-border-radius: @top @right @bottom @left;
+  -moz-border-radius: @top @right @bottom @left;
+  border-radius: @top @right @bottom @left;
+  html[dir='rtl'] & {
+    -webkit-border-radius: @top @left @bottom @right;
+    -moz-border-radius: @top @left @bottom @right;
+    border-radius: @top @left @bottom @right;
+  }
+}
+
+.horizontal(@left; @right) {
+  left: @left;
+  right: @right;
+  html[dir='rtl'] & {
+    left: @right;
+    right: @left;
+  }
+}
+
+.left(@value) {
+  left: @value;
+  html[dir='rtl'] & {
+    left: auto;
+    right: @value;
+  }
+}
+
+.right(@value) {
+  right: @value;
+  html[dir='rtl'] & {
+    left: @value;
+    right: auto;
+  }
+}
