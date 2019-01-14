@@ -1,10 +1,10 @@
 ### React starter
 Containing:
 
-* webpack v2
+* webpack v4
 * redux-devtools v3
 * react-hot-loader v3
-* css-loader, style-loader, less-loader
+* css-loader, less-loader
 * redux, react-redux
 * es6
 * dev server
